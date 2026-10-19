@@ -1,0 +1,75 @@
+{
+  "checkpoint_sha256": "d6d7e8b9614e35208f83ee229e6aff066c3295b82e3377ddc6b27362bf989a76",
+  "settings": {
+    "dl3dv": {
+      "64": {
+        "num_scenes": 140,
+        "num_test_views": 1260,
+        "psnr_mean": 19.512762717634843,
+        "psnr_std": 2.3363573493448846,
+        "ssim_mean": 0.6334515664430838,
+        "ssim_std": 0.12328691908792003,
+        "lpips_mean": 0.39227085758059743,
+        "lpips_std": 0.08601404089356499,
+        "gaussians_per_scene_mean": 2288559.564285714
+      },
+      "96": {
+        "num_scenes": 140,
+        "num_test_views": 1820,
+        "psnr_mean": 18.54662936487514,
+        "psnr_std": 2.120482991683041,
+        "ssim_mean": 0.5826086549149765,
+        "ssim_std": 0.12404604037730829,
+        "lpips_mean": 0.4365625105552621,
+        "lpips_std": 0.08144918030273705,
+        "gaussians_per_scene_mean": 3432381.7357142856
+      },
+      "128": {
+        "num_scenes": 140,
+        "num_test_views": 2520,
+        "psnr_mean": 17.84197783604167,
+        "psnr_std": 2.026951923825529,
+        "ssim_mean": 0.5383401002306195,
+        "ssim_std": 0.1281819660627954,
+        "lpips_mean": 0.46837103425392085,
+        "lpips_std": 0.08094473397147138,
+        "gaussians_per_scene_mean": 4658625.014285714
+      }
+    },
+    "re10k": {
+      "64": {
+        "num_scenes": 180,
+        "num_test_views": 1620,
+        "psnr_mean": 19.8471224266568,
+        "psnr_std": 3.0410264573521855,
+        "ssim_mean": 0.6343672907554809,
+        "ssim_std": 0.13220083631047308,
+        "lpips_mean": 0.36083763712718164,
+        "lpips_std": 0.09113588803882618,
+        "gaussians_per_scene_mean": 908874.7
+      },
+      "96": {
+        "num_scenes": 180,
+        "num_test_views": 2340,
+        "psnr_mean": 18.899586131934345,
+        "psnr_std": 2.9117986302197547,
+        "ssim_mean": 0.5885578559122534,
+        "ssim_std": 0.13036068377134005,
+        "lpips_mean": 0.3962635334294576,
+        "lpips_std": 0.08972775933985482,
+        "gaussians_per_scene_mean": 1355200.6444444444
+      },
+      "128": {
+        "num_scenes": 180,
+        "num_test_views": 3240,
+        "psnr_mean": 18.14056715853267,
+        "psnr_std": 2.77863415586533,
+        "ssim_mean": 0.5499460851658642,
+        "ssim_std": 0.13060455869302928,
+        "lpips_mean": 0.424765817715246,
+        "lpips_std": 0.0885552429151573,
+        "gaussians_per_scene_mean": 1762354.322222222
+      }
+    }
+  }
+}

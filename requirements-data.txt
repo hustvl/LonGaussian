@@ -1,0 +1,6 @@
+# Download/preparation utilities; ffmpeg and deno are external executables.
+huggingface_hub
+yt-dlp[default]
+opencv-python
+Pillow
+numpy

@@ -1,0 +1,56 @@
+{
+  "format": "longaussian_reference_lineage_v1",
+  "stages": {
+    "stage1": {
+      "file": "stage1.pt",
+      "steps": 2148,
+      "sha256": "5eb98c87ddab96d0c2cd5967e5b8207541949eaf6ebe6e3b82e93ffd81a51950",
+      "parent_sha256": "990300620b0a1863cf0ebcca66bf9c2dcebff41fc55d8d8a6168d2074f15ab85",
+      "dataset_manifest_sha256": {
+        "stage1": "93326ccd38dfad31d8d2ba246f288e3ba4e8684342f35b775b8eb1772b7be592",
+        "stage2a": "c440e1a9a81a5468f011371d43c8320ffa42fd83a994491c088f1c4abf9a5e37",
+        "stage2b_dl3dv": "a0e9aa966b8ec115c8e2b797ace82be8c3bda005b4fc559bcdf0753cd992b760",
+        "stage2b_re10k": "9319e380b76c670ab7949dd40708ffa4d94ae8dc5e26213a4133007589e6625a"
+      },
+      "external_weight_sha256": {
+        "LoGeR_star/latest.pt": "68a0ae71408eb5605b8409296e7d5bf43c87853595766195257af97c5e60373c",
+        "alltracker.pth": "ffd9ebcfb6d206d594b646999a150540f92c049cf9b2bf940facf7123f62aa1d",
+        "skyseg.onnx": "ab9c34c64c3d821220a2886a4a06da4642ffa14d5b30e8d5339056a089aa1d39"
+      }
+    },
+    "stage2a": {
+      "file": "stage2a.pt",
+      "steps": 900,
+      "sha256": "efb2deba189bc5b00a1ecabb305a52c37d5f4b5356af7eaba53f483da5bd488a",
+      "parent_sha256": "5eb98c87ddab96d0c2cd5967e5b8207541949eaf6ebe6e3b82e93ffd81a51950",
+      "dataset_manifest_sha256": {
+        "stage1": "93326ccd38dfad31d8d2ba246f288e3ba4e8684342f35b775b8eb1772b7be592",
+        "stage2a": "c440e1a9a81a5468f011371d43c8320ffa42fd83a994491c088f1c4abf9a5e37",
+        "stage2b_dl3dv": "a0e9aa966b8ec115c8e2b797ace82be8c3bda005b4fc559bcdf0753cd992b760",
+        "stage2b_re10k": "9319e380b76c670ab7949dd40708ffa4d94ae8dc5e26213a4133007589e6625a"
+      },
+      "external_weight_sha256": {
+        "LoGeR_star/latest.pt": "68a0ae71408eb5605b8409296e7d5bf43c87853595766195257af97c5e60373c",
+        "alltracker.pth": "ffd9ebcfb6d206d594b646999a150540f92c049cf9b2bf940facf7123f62aa1d",
+        "skyseg.onnx": "ab9c34c64c3d821220a2886a4a06da4642ffa14d5b30e8d5339056a089aa1d39"
+      }
+    },
+    "stage2b": {
+      "file": "stage2b.pt",
+      "steps": 300,
+      "sha256": "d6d7e8b9614e35208f83ee229e6aff066c3295b82e3377ddc6b27362bf989a76",
+      "parent_sha256": "efb2deba189bc5b00a1ecabb305a52c37d5f4b5356af7eaba53f483da5bd488a",
+      "dataset_manifest_sha256": {
+        "stage1": "93326ccd38dfad31d8d2ba246f288e3ba4e8684342f35b775b8eb1772b7be592",
+        "stage2a": "c440e1a9a81a5468f011371d43c8320ffa42fd83a994491c088f1c4abf9a5e37",
+        "stage2b_dl3dv": "a0e9aa966b8ec115c8e2b797ace82be8c3bda005b4fc559bcdf0753cd992b760",
+        "stage2b_re10k": "9319e380b76c670ab7949dd40708ffa4d94ae8dc5e26213a4133007589e6625a"
+      },
+      "external_weight_sha256": {
+        "LoGeR_star/latest.pt": "68a0ae71408eb5605b8409296e7d5bf43c87853595766195257af97c5e60373c",
+        "alltracker.pth": "ffd9ebcfb6d206d594b646999a150540f92c049cf9b2bf940facf7123f62aa1d",
+        "skyseg.onnx": "ab9c34c64c3d821220a2886a4a06da4642ffa14d5b30e8d5339056a089aa1d39"
+      }
+    }
+  }
+}

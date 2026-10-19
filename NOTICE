@@ -1,0 +1,7 @@
+LonGaussian includes original implementation and adaptations of third-party code.
+
+Copyright, attribution and license notices in individual source files and in
+LICENSES/ apply to the corresponding components. THIRD_PARTY_LICENSES.md maps
+components to upstream projects and bundled license texts.
+
+External models and datasets are obtained separately and retain their own terms.
