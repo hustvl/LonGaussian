@@ -1,5 +1,32 @@
 # Weights
 
+## Pretrained checkpoint
+
+The pretrained LonGaussian checkpoint is available on
+**[Hugging Face](https://huggingface.co/abkp/LonGaussian)**:
+
+| File | Size | SHA256 |
+| --- | --- | --- |
+| [stage2b.pt](https://huggingface.co/abkp/LonGaussian/resolve/main/stage2b.pt?download=true) | 272 MB | `9f49fab3604ac174e323c8d74bdc44966e257f3b6be32ef35c338f6fb0bb1feb` |
+
+Download it without training:
+
+```python
+from huggingface_hub import hf_hub_download
+
+hf_hub_download(
+    repo_id="abkp/LonGaussian",
+    filename="stage2b.pt",
+    local_dir="/path/to/weights",
+)
+```
+
+Set `GAUSSIAN_HEAD=/path/to/weights/stage2b.pt` when running inference or
+evaluation. The frozen dependencies below are also required; training datasets
+are not needed for inference.
+
+## Frozen dependencies
+
 Download the external models with:
 
 ```bash

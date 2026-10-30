@@ -7,6 +7,7 @@
 <p>
 <a href="https://abearkeeper.github.io/LonGaussian.github.io/"><img src="https://img.shields.io/badge/Project-Page-2980b9" alt="Project page"></a>
 <a href="https://arxiv.org/pdf/2610.23250"><img src="https://img.shields.io/badge/arXiv-Paper-b31b1b" alt="arXiv paper"></a>
+<a href="https://huggingface.co/abkp/LonGaussian"><img src="https://img.shields.io/badge/Hugging%20Face-Model-FFD21E" alt="Pretrained model"></a>
 </p>
 
 <p>
@@ -93,6 +94,11 @@ also needs ffmpeg and Deno.
 
 ## Data and weights
 
+Download the pretrained **[stage2b.pt](https://huggingface.co/abkp/LonGaussian/resolve/main/stage2b.pt?download=true)**
+(272 MB) from **[Hugging Face](https://huggingface.co/abkp/LonGaussian)**.
+Training is not required for inference. Save the checkpoint to
+`/path/to/weights/stage2b.pt` and use it as `GAUSSIAN_HEAD` in the commands below.
+
 Use [DATASETS.md](DATASETS.md) for official-source downloads, deterministic
 train/test splits, and evaluation-root preparation. External model identities,
 checksums and the checkpoint lineage are in [WEIGHTS.md](WEIGHTS.md). For
@@ -178,7 +184,7 @@ complement, depth filtering and sky-shell construction.
 
 ```bash
 INPUT=/path/to/calibrated_scene NUM_FRAMES=24 OUTPUT_DIR=/path/to/new_inference \
-MODEL_NAME=/path/to/weights/LoGeR_star/latest.pt GAUSSIAN_HEAD=/path/to/run/training/stage2b.pt \
+MODEL_NAME=/path/to/weights/LoGeR_star/latest.pt GAUSSIAN_HEAD=/path/to/weights/stage2b.pt \
 ALLTRACKER_CHECKPOINT=/path/to/weights/alltracker.pth SKY_MASK_ONNX=/path/to/weights/skyseg.onnx \
 bash scripts/infer_longaussian.sh
 ```
@@ -187,7 +193,7 @@ For a prepared DL3DV-140 evaluation root:
 
 ```bash
 DATASET_ROOT=/path/to/eval-dl3dv128 OUTPUT_DIR=/path/to/new_eval NUM_FRAMES=146 \
-MODEL_NAME=/path/to/weights/LoGeR_star/latest.pt GAUSSIAN_HEAD=/path/to/run/training/stage2b.pt \
+MODEL_NAME=/path/to/weights/LoGeR_star/latest.pt GAUSSIAN_HEAD=/path/to/weights/stage2b.pt \
 ALLTRACKER_CHECKPOINT=/path/to/weights/alltracker.pth SKY_MASK_ONNX=/path/to/weights/skyseg.onnx \
 bash scripts/evaluate_dl3dv140.sh
 ```
